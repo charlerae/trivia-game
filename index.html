@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <script text="text/javascript" src="game.js"></script>
+    <title>Trivia Time</title>
+</head>
+<body>
+    <main>
+         <!-- game buttons -->
+        <div id="game-board">
+            <button id="use-callback" class="pure-button">Call Back</button>
+            <button id="use-promise" class="pure-button">Promise</button>
+            <button id="use-async-await" class="pure-button">Async/Await</button>
+        </div>
+
+        <div id="score"></div>
+        <div id="category-title"></div>
+        <div id="question"></div>
+        <div id="value"></div>
+        <div id="invalid-count"></div>
+
+        <!-- form -->
+        <form class="pure-form">
+            <textarea name="" id="player-response" class="pure-input-1" cols="30" rows="10"></textarea>
+        </form>
+
+        <!-- check answer -->
+        <button id="check-response" class="pure-button"></button>
+
+        <!-- show answer -->
+        <div id="answer"></div>
+    </main>
+</body>
+</html>
