@@ -32,4 +32,13 @@ cbButton.addEventListener('click', event => {
 })
 
 
-
+// promise getClue event listener
+promiseButton.addEventListener('click', event => {
+    getClueFromPromise()
+        .then((obj) => {
+        questionDiv.innerHTML = `${obj.question}`;
+        answerDiv.innerHTML = `${obj.answer}`;
+        valuenDiv.innerHTML = `${obj.question.value}`;
+        categoryTitleDiv.innerHTML = `${obj.category.title}`;
+    })
+})
